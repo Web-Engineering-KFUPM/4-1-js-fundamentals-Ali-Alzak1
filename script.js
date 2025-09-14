@@ -24,11 +24,12 @@ console.log(course);
 // NOTE: For now, keep the reassignment line commented so the file runs without errors.
 // const SCHOOL = "MyCollege";
 // SCHOOL = "OtherCollege"; // <-- Uncomment to see the error, then re-comment after testing
-const SCHOOL = "MyCollege";
-// In the browser i clicked inspect to see my code and it showed it with the line for the error.
 
+// my work
+const SCHOOL = "MyCollege";
 // SCHOOL = "OtherCollege"; 
 
+// In the browser i clicked inspect to see my code and it showed it with the line for the error.
 
 
 
@@ -44,7 +45,7 @@ let x = 8, y = 3;
  console.log(x+y); // output = 11
  console.log(x-y) // output = 5
  console.log(x*y); // output = 24
- console.log(x/y); // output = 2.6666666666666665
+ console.log(x/y); // output = 2.6666666666666665 
  console.log(x%y); // output = 2
 
 // Task 4.2 — number vs string
@@ -148,13 +149,15 @@ while (t > 0) {
 // write code here
 function add(a, b) {
     return a + b;
-    
 }
+    console.log(add(2, 5));
+
 
 // Task 7.2 — Arrow functions
 // Make an arrow function; const cube = n => n*n*n; cube(3)
 // write code here
-
+const cube = n => n * n * n;
+console.log(cube(3));
 
 // =================================
 // TODO-8: SCOPE & GLOBAL OBJECT (ESSENTIALS)
@@ -163,6 +166,13 @@ function add(a, b) {
 // Task 8.1 — var vs let scope
 // Declare var a = 1; let b = 2 inside a block { },  then try displaying both outside the block; observe differences.
 // write code here
+if (true) {
+    var a = 1;
+    let b = 2;
+}
+console.log(a); // will result an output of 1
+// console.log(b); // there is an error because b isn't defined outside the block
+
 
 
 // ==================
@@ -172,6 +182,11 @@ function add(a, b) {
 // Task 9.1 — create & mutate
 // TODO: let nums = [3,1,4]; then push(1), unshift(9), pop(); log final array and length.
 // write code here
-
+let nums = [3, 1, 4];
+nums.push(1);
+nums.unshift(9);
+nums.pop();
+console.log(nums); // output = [9, 3, 1, 4] but in the console it shows it like this Array(4) [9, 3, 1, 4]
+console.log(nums.length);
 
 // End of manual — great job! Keep this file open and work task by task.
